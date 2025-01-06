@@ -1219,9 +1219,24 @@ video {
 }
 
 .p-280px {
-  padding: 280px;
+  padding: 140px;
 }
 
-.h-40px {
+.h-50px {
   height: 60px;
 }
+
+.hidden {
+  display: none;
+}
+
+.btn-sec-one {
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.bg-slide-in {
+  background-color: #FFC501;
+}
+
+

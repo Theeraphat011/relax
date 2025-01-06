@@ -6,6 +6,7 @@ btn_section_one.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         // ลบ class ทั้งหมดใน btn_section_one
         btn_section_one.forEach(btn => {
+            btn.classList.remove('bg-slide-in');
             btn.classList.remove('bg-[#FFC501]');
         });
         // ซ่อน content ทั้งหมดใน content_section_one
@@ -16,7 +17,7 @@ btn_section_one.forEach((btn, index) => {
         image_section_one.forEach(img => {
             img.classList.add('hidden');
         });
-        btn.classList.add('bg-[#FFC501]');
+        btn.classList.add('bg-slide-in');
         content_section_one[index].classList.remove('hidden');
         image_section_one[index].classList.remove('hidden');
     });
